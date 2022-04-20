@@ -20,7 +20,7 @@ jobs:
       - name: Translate secrets of base64 into json
         env:
           JSON_DECODE: ${{ secrets.JSON_CREDENTIAL }}
-        run: echo-n $JSON_DECODE | base64 --decode > ./gcloud-key.json
+        run: echo -n $JSON_DECODE | base64 --decode > ./gcloud-key.json
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
