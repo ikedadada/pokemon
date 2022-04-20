@@ -8,4 +8,21 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, world!"
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        id: setup_node_id
+        with:
+          node-version: 16.8.0
+          cache: npm
+      - run: echo '${{ toJSON(steps.setup_node_id.outputs) }}'
+      - if: ${{ steps.setup_node_id.outputs.cache-hit != 'true' }}
+        run: npm install
+      - name: Translate secrets of base64 into json
+        env:
+          JSON_DECODE: ${{ secrets.JSON_CREDENTIAL }}
+        run: echo-n $JSON_DECODE | base64 --decode > ./gcloud-key.json
+      - name: Deploy
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: npm run deploy:prod
