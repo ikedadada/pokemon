@@ -23,7 +23,6 @@
     "react-hook-form": "^7.29.0"
   },
   "devDependencies": {
-    "@serverless/cli": "^1.6.0",
     "@serverless/core": "^1.1.2",
     "@serverless/template": "^1.1.4",
     "@sls-next/serverless-component": "^3.7.0-alpha.11",
