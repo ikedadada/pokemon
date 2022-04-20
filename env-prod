@@ -1,0 +1,4 @@
+BUCKET_NAME='serverless-bucket-pokemon-prod'
+API_LAMBDA_NAME='serverless-api-pokemon-prod'
+DEFAULT_LAMBDA_NAME='serverless-default-pokemon-prod'
+DISTRIBUTION_ID='E29VR9I4QT8N9Q'

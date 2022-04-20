@@ -1,0 +1,17 @@
+{
+  "name": "erverless-default-pokemon-staging",
+  "hash": "B9vfthkF1GqH5zHclslrlNX5ukr1qE++DkAg8jd3WC0=",
+  "description": "Default Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/Users/koichi.ikeda/Documents/BigQueryTest/pokemon/.serverless_nextjs/default-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::214830615256:role/t18x1bg-xuy3usf"
+  },
+  "arn": "arn:aws:lambda:us-east-1:214830615256:function:erverless-default-pokemon-staging",
+  "region": "us-east-1"
+}

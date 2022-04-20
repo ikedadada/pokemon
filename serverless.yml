@@ -1,0 +1,9 @@
+myNextApplication:
+  component: "@sls-next/serverless-component@3.7.0-alpha.11"
+  inputs:
+    bucketName: ${env.BUCKET_NAME}
+    name:
+      defaultLambda: ${env.DEFAULT_LAMBDA_NAME}
+      apiLambda: ${env.API_LAMBDA_NAME}
+    cloudfront:
+      distributionId: ${env.DISTORIBUTION_ID}

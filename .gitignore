@@ -33,3 +33,12 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# env
+.env
+
+# serverless
+/.serverless_nextjs/
+
+# gcloud-key.json
+/gcloud-key.json
