@@ -15,8 +15,6 @@ jobs:
         env:
           JSON_DECODE: ${{ secrets.JSON_CREDENTIAL }}
         run: echo -n $JSON_DECODE | base64 --decode > ./gcloud-key.json
-      - name: \@serverless/cli install
-        run: npm install -g @serverless/cli
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
