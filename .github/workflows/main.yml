@@ -29,16 +29,16 @@ jobs:
           DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
           BIGQUERY_PROJECT_ID: ${{ secrets.BIGQUERY_PROJECT_ID }}
           BIGQUERY_DATASET_ID: ${{ secrets.BIGQUERY_DATASET_ID }}
-        run: echo -e "STAGE='${{ env.STAGE }}'\n\
-          DOMAIN='$DOMAIN'\n\
-          BUCKET_NAME='$BUCKET_NAME'\n\
-          API_LAMBDA_NAME='$API_LAMBDA_NAME'\n\
-          DEFAULT_LAMBDA_NAME='$DEFAULT_LAMBDA_NAME'\n\
-          DISTRIBUTION_ID='$DISTRIBUTION_ID'\n\
-          BIGQUERY_PROJECT_ID='$BIGQUERY_PROJECT_ID'\n\
-          BIGQUERY_DATASET_ID='$BIGQUERY_DATASET_ID'" > ./env-prod
+        run: echo -e "STAGE='${{ env.STAGE }}'\n
+         DOMAIN='$DOMAIN'\n
+         BUCKET_NAME='$BUCKET_NAME'\n
+         API_LAMBDA_NAME='$API_LAMBDA_NAME'\n
+         DEFAULT_LAMBDA_NAME='$DEFAULT_LAMBDA_NAME'\n
+         DISTRIBUTION_ID='$DISTRIBUTION_ID'\n
+         BIGQUERY_PROJECT_ID='$BIGQUERY_PROJECT_ID'\n
+         BIGQUERY_DATASET_ID='$BIGQUERY_DATASET_ID'" > ./env-prod
       - name: tmp
-        run: cat -A ./env-prod
+        run: cat ./env-prod
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
