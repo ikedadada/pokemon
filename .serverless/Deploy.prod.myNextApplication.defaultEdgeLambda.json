@@ -1,10 +1,10 @@
 {
   "name": "serverless-default-pokemon-prod",
-  "hash": "oBkBL8ELlvaUs5QRYpE+DpgdRa1LSUDSEBDQWPF0uV8=",
+  "hash": "GV0wusNFYjju4jcgQW0+JAVCZpxLIDIIhNe3ogka7DM=",
   "description": "Default Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
-  "code": "/home/runner/work/pokemon/pokemon/.serverless_nextjs/default-lambda",
+  "code": "/Users/koichi.ikeda/Documents/BigQueryTest/pokemon/.serverless_nextjs/default-lambda",
   "shims": [],
   "handler": "index.handler",
   "runtime": "nodejs14.x",

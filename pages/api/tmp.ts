@@ -1,11 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import formidable from 'formidable'
 import * as fs from 'fs'
-import {parse} from 'csv-parse/sync'
 import { BigQuery, JobLoadMetadata } from '@google-cloud/bigquery'
 import credential from '../../gcloud-key.json'
-import { JSONParser } from 'formidable/parsers'
 
 export default async function handler(
   req: NextApiRequest,

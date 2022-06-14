@@ -1,10 +1,10 @@
 {
   "name": "serverless-api-pokemon-prod",
-  "hash": "dtDr5ePpNB3Dlu65eOBx6ecuuGFjNI6soesUFytKBNE=",
+  "hash": "LA0JqwXrHuoQuSRvqrZ/w/RiwF7jEQiuj/xztimz8is=",
   "description": "API Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
-  "code": "/home/runner/work/pokemon/pokemon/.serverless_nextjs/api-lambda",
+  "code": "/Users/koichi.ikeda/Documents/BigQueryTest/pokemon/.serverless_nextjs/api-lambda",
   "shims": [],
   "handler": "index.handler",
   "runtime": "nodejs14.x",
