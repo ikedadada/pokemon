@@ -39,7 +39,8 @@ export default async function handler(
     console.log('返した')
   }catch(e){
     console.warn(e)
-    res.status(400).json({e})
+    if(e instanceof Error) return res.status(400).json({e:e.message})
+    res.status(500).json({server:'Error'})
   }
 
   console.log('ファイルあった')
