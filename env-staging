@@ -1,4 +1,0 @@
-BUCKET_NAME='serverless-bucket-pokemon-staging'
-API_LAMBDA_NAME='serverless-api-pokemon-staging'
-DEFAULT_LAMBDA_NAME='serverless-default-pokemon-staging'
-DISTRIBUTION_ID='E128HBNKJ8IGT8'

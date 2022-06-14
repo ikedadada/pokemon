@@ -15,6 +15,24 @@ jobs:
         env:
           JSON_DECODE: ${{ secrets.JSON_CREDENTIAL }}
         run: echo -n $JSON_DECODE | base64 --decode > ./gcloud-key.json
+      - name: Create env-prod
+        env:
+          STAGE: ${{ secrets.STAGE }}
+          DOMAIN: ${{ secrets.DOMAIN }}
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+          API_LAMBDA_NAME: ${{ secrets.API_LAMBDA_NAME }}
+          DEFAULT_LAMBDA_NAME: ${{ secrets.DEFAULT_LAMBDA_NAME }}
+          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+          BIGQUERY_PROJECT_ID: ${{ secrets.BIGQUERY_PROJECT_ID }}
+          BIGQUERY_DATASET_ID: ${{ secrets.BIGQUERY_DATASET_ID }}
+        run: echo -e "STAGE=${{ env.STAGE }}\n\
+          DOMAIN=${{ env.DOMAIN }}\n\
+          BUCKET_NAME=${{ env.BUCKET_NAME }}\n\
+          API_LAMBDA_NAME=${{ env.API_LAMBDA_NAME }}\n\
+          DEFAULT_LAMBDA_NAME=${{ env.DEFAULT_LAMBDA_NAME }}\n\
+          DISTRIBUTION_ID=${{ env.DISTRIBUTION_ID }}\n\
+          BIGQUERY_PROJECT_ID=${{ env.BIGQUERY_PROJECT_ID }}\n\
+          BIGQUERY_DATASET_ID=${{ env.BIGQUERY_DATASET_ID }}" > env-prod
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

@@ -2,5 +2,9 @@
   "name": "serverless-bucket-pokemon-prod",
   "region": "us-east-1",
   "accelerated": true,
-  "url": "https://serverless-bucket-pokemon-prod.s3.amazonaws.com"
+  "url": "https://serverless-bucket-pokemon-prod.s3.amazonaws.com",
+  "tags": {
+    "project": "tarsier",
+    "stage": "prod"
+  }
 }

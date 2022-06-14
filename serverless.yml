@@ -1,9 +1,28 @@
 myNextApplication:
   component: "@sls-next/serverless-component@3.7.0-alpha.11"
   inputs:
+    domain: ${env.DOMAIN}
     bucketName: ${env.BUCKET_NAME}
+    bucketTags:
+      project: tarsier
+      stage: ${env.STAGE}
     name:
       defaultLambda: ${env.DEFAULT_LAMBDA_NAME}
       apiLambda: ${env.API_LAMBDA_NAME}
+    tags:
+      defaultLambda:
+        project: tarsier
+        stage: ${env.STAGE}
+      apiLambda:
+        project: tarsier
+        stage: ${env.STAGE}
     cloudfront:
-      distributionId: ${env.DISTORIBUTION_ID}
+      distributionId: ${env.DISTRIBUTION_ID}
+      webACLId: "arn:aws:wafv2:us-east-1:214830615256:global/webacl/AllowFromMyHome/987c8a6a-fe63-4e35-970b-ca2ef556f26d"
+      tags:
+        project: tarsier
+        stage: ${env.STAGE}
+    build:
+      env:
+        BIGQUERY_PROJECT_ID: ${env.BIGQUERY_PROJECT_ID}
+        BIGQUERY_DATASET_ID: ${env.BIGQUERY_DATASET_ID}

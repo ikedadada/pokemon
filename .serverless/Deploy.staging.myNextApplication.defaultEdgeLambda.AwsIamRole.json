@@ -1,6 +1,6 @@
 {
-  "name": "t18x1bg-xuy3usf",
-  "arn": "arn:aws:iam::214830615256:role/t18x1bg-xuy3usf",
+  "name": "l3k3fkq-gixa7ek",
+  "arn": "arn:aws:iam::214830615256:role/l3k3fkq-gixa7ek",
   "service": [
     "edgelambda.amazonaws.com",
     "lambda.amazonaws.com"

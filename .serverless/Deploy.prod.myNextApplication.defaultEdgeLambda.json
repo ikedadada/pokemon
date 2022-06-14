@@ -1,17 +1,21 @@
 {
   "name": "serverless-default-pokemon-prod",
-  "hash": "DkKaTVHLP07h84W+Ig4YucfO2s4TOjRegWIj8lGkjRM=",
+  "hash": "MrtK7RfO0V84VLfSZ/ZkUHYgesxHcYnNG/l6+DDPkZ4=",
   "description": "Default Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
-  "code": "/home/runner/work/pokemon/pokemon/.serverless_nextjs/default-lambda",
+  "code": "/Users/koichi.ikeda/Documents/BigQueryTest/pokemon/.serverless_nextjs/default-lambda",
   "shims": [],
   "handler": "index.handler",
   "runtime": "nodejs14.x",
   "env": {},
   "role": {
-    "arn": "arn:aws:iam::214830615256:role/t18x1bg-cekzsqb"
+    "arn": "arn:aws:iam::214830615256:role/l3k3fkq-s6fx6no"
   },
   "arn": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod",
-  "region": "us-east-1"
+  "region": "us-east-1",
+  "tags": {
+    "project": "tarsier",
+    "stage": "prod"
+  }
 }

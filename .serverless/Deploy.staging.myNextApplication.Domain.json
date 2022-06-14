@@ -1,0 +1,14 @@
+{
+  "region": "us-east-1",
+  "privateZone": false,
+  "domain": "stg.ikddd-awstest.com",
+  "subdomains": [
+    {
+      "domain": "www.stg.ikddd-awstest.com",
+      "distributionId": "E3RNSC8VO0Y75M",
+      "url": "https://d1nrgy9mh7f3lb.cloudfront.net",
+      "type": "awsCloudFront"
+    }
+  ],
+  "domainMinimumProtocolVersion": "TLSv1.2_2018"
+}

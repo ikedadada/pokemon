@@ -1,6 +1,6 @@
 {
-  "name": "erverless-default-pokemon-staging",
-  "hash": "B9vfthkF1GqH5zHclslrlNX5ukr1qE++DkAg8jd3WC0=",
+  "name": "serverless-default-pokemon-staging",
+  "hash": "fIKl8t0bVm0HVL4iElXYAb+1L7qu8o67+WbEsQKiyR8=",
   "description": "Default Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
@@ -10,8 +10,12 @@
   "runtime": "nodejs14.x",
   "env": {},
   "role": {
-    "arn": "arn:aws:iam::214830615256:role/t18x1bg-xuy3usf"
+    "arn": "arn:aws:iam::214830615256:role/l3k3fkq-gixa7ek"
   },
-  "arn": "arn:aws:lambda:us-east-1:214830615256:function:erverless-default-pokemon-staging",
-  "region": "us-east-1"
+  "arn": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-staging",
+  "region": "us-east-1",
+  "tags": {
+    "project": "tarsier",
+    "stage": "stg"
+  }
 }

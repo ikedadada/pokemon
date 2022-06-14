@@ -1,7 +1,7 @@
 {
-  "id": "E128HBNKJ8IGT8",
-  "arn": "arn:aws:cloudfront::214830615256:distribution/E128HBNKJ8IGT8",
-  "url": "https://d39gmbi2p05i77.cloudfront.net",
+  "id": "E3RNSC8VO0Y75M",
+  "arn": "arn:aws:cloudfront::214830615256:distribution/E3RNSC8VO0Y75M",
+  "url": "https://d1nrgy9mh7f3lb.cloudfront.net",
   "region": "us-east-1",
   "enabled": true,
   "comment": "",
@@ -53,7 +53,7 @@
             "queryString": true
           },
           "lambda@edge": {
-            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-api-pokemon-staging:2"
+            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-api-pokemon-staging:89"
           }
         },
         "_next/data/*": {
@@ -73,8 +73,8 @@
             "queryString": true
           },
           "lambda@edge": {
-            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:erverless-default-pokemon-staging:2",
-            "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:erverless-default-pokemon-staging:2"
+            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-staging:84",
+            "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-staging:84"
           }
         }
       }
@@ -103,9 +103,13 @@
       "PATCH"
     ],
     "lambda@edge": {
-      "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:erverless-default-pokemon-staging:2",
-      "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:erverless-default-pokemon-staging:2"
+      "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-staging:84",
+      "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-staging:84"
     },
     "compress": true
+  },
+  "tags": {
+    "project": "tarsier",
+    "stage": "stg"
   }
 }
