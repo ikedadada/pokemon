@@ -36,7 +36,7 @@ jobs:
           DEFAULT_LAMBDA_NAME=${{ env.DEFAULT_LAMBDA_NAME }}\n\
           DISTRIBUTION_ID=${{ env.DISTRIBUTION_ID }}\n\
           BIGQUERY_PROJECT_ID=${{ env.BIGQUERY_PROJECT_ID }}\n\
-          BIGQUERY_DATASET_ID=${{ env.BIGQUERY_DATASET_ID }}" > env-prod
+          BIGQUERY_DATASET_ID=${{ env.BIGQUERY_DATASET_ID }}" > ./env-prod
       - name: Deploy
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
