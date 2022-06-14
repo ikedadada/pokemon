@@ -53,7 +53,7 @@
             "queryString": true
           },
           "lambda@edge": {
-            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-api-pokemon-prod:28"
+            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-api-pokemon-prod:30"
           }
         },
         "_next/data/*": {
@@ -73,8 +73,8 @@
             "queryString": true
           },
           "lambda@edge": {
-            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:27",
-            "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:27"
+            "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:29",
+            "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:29"
           }
         }
       }
@@ -103,8 +103,8 @@
       "PATCH"
     ],
     "lambda@edge": {
-      "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:27",
-      "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:27"
+      "origin-request": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:29",
+      "origin-response": "arn:aws:lambda:us-east-1:214830615256:function:serverless-default-pokemon-prod:29"
     },
     "compress": true
   },
