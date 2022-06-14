@@ -19,7 +19,7 @@
       },
       {
         "Effect": "Allow",
-        "Resource": "arn:aws:s3:::serverless-bucket-pokemon-prod/*",
+        "Resource": "arn:aws:s3:::erverless-bucket-pokemon-prod/*",
         "Action": [
           "s3:GetObject",
           "s3:PutObject"
