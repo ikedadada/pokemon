@@ -1,6 +1,6 @@
 {
   "name": "serverless-api-pokemon-prod",
-  "hash": "uuwS3HTTSovDPoJqv/uSuMEIEpees1DRFOli9voC6Eg=",
+  "hash": "gPSwPAdQCohPu+fBAmapC1Ce0kI5xYIGHPPitiXFOTs=",
   "description": "API Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
