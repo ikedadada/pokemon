@@ -1,6 +1,6 @@
 {
   "name": "serverless-default-pokemon-prod",
-  "hash": "txH+GD/3QFtLXKiK9mVSjbHZr1M23UylpTYLVEC5X8M=",
+  "hash": "nDHsNxOU+u/ntxhyPTq8A5+DbxosEevUvYfxZXJefQk=",
   "description": "Default Lambda@Edge for Next CloudFront distribution",
   "memory": 512,
   "timeout": 10,
