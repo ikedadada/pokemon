@@ -10,6 +10,6 @@ export default async function handler(
 ) {
   const projectId = process.env.BIGQUERY_PROJECT_ID
   const datasetId = process.env.BIGQUERY_DATASET_ID
-  const ver = "3"
+  const ver = "4"
   res.status(200).json({projectId:projectId || "なし",datasetId: datasetId || "なし",ver})
 }

@@ -33,7 +33,7 @@ export default async function handler(
       autodetect: false // autodetectがtrueだと、テーブルが無ければ勝手に作られる。
     }
 
-    const t = await bigQueryClient.dataset('test_pokemon').table('pokemon').load('/tmp/test.jsonl',metadata)    
+    const t = await bigQueryClient.dataset('pokemon').table('pokemon').load('/tmp/test.jsonl',metadata)    
 
     res.status(200).json({success:JSON.stringify(t)})
     console.log('返した')
