@@ -10,7 +10,8 @@
     "deploy:prod": "components-v1 --stage=prod --debug",
     "remove:staging": "components-v1 remove --stage=staging --debug",
     "remove:prod": "components-v1 remove --stage=prod --debug",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -30,6 +31,8 @@
     "@serverless/core": "^1.1.2",
     "@serverless/template": "^1.1.4",
     "@sls-next/serverless-component": "^3.7.0-alpha.11",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
     "@types/formidable": "^2.0.5",
     "@types/node": "17.0.23",
     "@types/react": "17.0.43",
@@ -37,6 +40,7 @@
     "dotenv": "^16.0.0",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
+    "jest": "^28.1.1",
     "serverless": "^3.12.0",
     "typescript": "4.6.3"
   }

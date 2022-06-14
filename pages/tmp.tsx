@@ -36,7 +36,7 @@ const Home: NextPage = () => {
   const handleSubmit = async () => {
 
     try {
-      const res = await fetch('/api/test',{
+      const res = await fetch('/api/tmp',{
         method:'POST',
         body: JSON.stringify([
           {no:1,name:'tetete',stage:1,types:'god',color:"yellow"}
