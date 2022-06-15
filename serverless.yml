@@ -17,7 +17,7 @@ myNextApplication:
         project: tarsier
         stage: ${env.STAGE}
     cloudfront:
-      webACLId: "arn:aws:wafv2:us-east-1:214830615256:global/webacl/AllowFromMyHome/987c8a6a-fe63-4e35-970b-ca2ef556f26d"
+      webACLId: ${env.WEB_ACL_ID}
       tags:
         project: tarsier
         stage: ${env.STAGE}

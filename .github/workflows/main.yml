@@ -27,6 +27,7 @@ jobs:
           API_LAMBDA_NAME: ${{ secrets.API_LAMBDA_NAME }}
           DEFAULT_LAMBDA_NAME: ${{ secrets.DEFAULT_LAMBDA_NAME }}
           DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+          WEB_ACL_ID: ${{ secrets.WEB_ACL_ID }}
           BIGQUERY_PROJECT_ID: ${{ secrets.BIGQUERY_PROJECT_ID }}
           BIGQUERY_DATASET_ID: ${{ secrets.BIGQUERY_DATASET_ID }}
         run: |
@@ -36,6 +37,7 @@ jobs:
           API_LAMBDA_NAME='$API_LAMBDA_NAME'\n
           DEFAULT_LAMBDA_NAME='$DEFAULT_LAMBDA_NAME'\n
           DISTRIBUTION_ID='$DISTRIBUTION_ID'\n
+          WEB_ACL_ID='$WEB_ACL_ID'\n
           BIGQUERY_PROJECT_ID='$BIGQUERY_PROJECT_ID'\n
           BIGQUERY_DATASET_ID='$BIGQUERY_DATASET_ID'" > ./env-prod
       - name: tmp
