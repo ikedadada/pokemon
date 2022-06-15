@@ -1,0 +1,21 @@
+{
+  "name": "serverless-api-pokemon-prod",
+  "hash": "4+O2iRX/DPtATOrhaJ+aaROvlu+ViE46ujuhaWyjvrk=",
+  "description": "API Lambda@Edge for Next CloudFront distribution",
+  "memory": 512,
+  "timeout": 10,
+  "code": "/home/runner/work/pokemon/pokemon/.serverless_nextjs/api-lambda",
+  "shims": [],
+  "handler": "index.handler",
+  "runtime": "nodejs14.x",
+  "env": {},
+  "role": {
+    "arn": "arn:aws:iam::214830615256:role/p2yehwy-ft7yoyt"
+  },
+  "arn": "arn:aws:lambda:us-east-1:214830615256:function:serverless-api-pokemon-prod",
+  "region": "us-east-1",
+  "tags": {
+    "project": "tarsier",
+    "stage": "prod"
+  }
+}

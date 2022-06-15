@@ -1,0 +1,10 @@
+{
+  "name": "erverless-bucket-pokemon-prod",
+  "region": "us-east-1",
+  "accelerated": true,
+  "url": "https://erverless-bucket-pokemon-prod.s3.amazonaws.com",
+  "tags": {
+    "project": "tarsier",
+    "stage": "prod"
+  }
+}
